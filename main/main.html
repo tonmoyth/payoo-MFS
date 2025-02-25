@@ -114,23 +114,23 @@
                           <label class="label">
                             <span class="label-text">Agent Number</span>
                           </label>
-                          <input type="text" placeholder="Enter 11 digit Number" class="input input-bordered" required />
+                          <input id="number" type="text" placeholder="Enter 11 digit Number" class="input input-bordered" required />
                         </div>
                             <span class="label-text">Amount</span>
                           </label>
-                          <input id="amount" type="text" placeholder="Enter amount to Withdraw" class="input input-bordered" required />
+                          <input id="cash-amount" type="text" placeholder="Enter amount to Withdraw" class="input input-bordered" required />
     
     
                           <label class="label">
                             <span class="label-text">PIN Number</span>
                           </label>
-                          <input id="pin-number" type="text" placeholder="Enter 4 digit pin Number" class="input input-bordered" required />
+                          <input id="cash-pin" type="text" placeholder="Enter 4 digit pin Number" class="input input-bordered" required />
     
                           <label class="label">
                             <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
                           </label>
                           <div class="form-control mt-6">
-                            <button id="add-button" class="btn btn-primary bg-[#0874F2] text-white border-none">Withdraw Money</button>
+                            <button id="cashout-button" class="btn btn-primary bg-[#0874F2] text-white border-none">Withdraw Money</button>
                         </div>
                     </form>
                  </div>
@@ -140,5 +140,6 @@
     </section>
     <script src="main.js"></script>
     <script src="toggle.js"></script>
+    <script src="cashout.js"></script>
 </body>
 </html>
