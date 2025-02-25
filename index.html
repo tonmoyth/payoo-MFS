@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo</title>
+    <!-- tailwind cdn -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- Daisy UI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-800">
+    <section class="bg-gray-100 h-screen lg:w-2/6 mx-auto pt-20 px-5">
+        <!-- image -->
+        <div class="relative h-1/4">
+            <img class="w-2/3 mx-auto" src="img/Rectangle 1.png" alt="">
+            <img class="absolute top-12 left-[44%]" src="img/Group.png" alt="">
+        </div>
+        <!-- login form -->
+        <div class="hero">
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-sm">
+                <form id="form" class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text font-bold">Mobile Number</span>
+                    </label>
+                    <input id="account-number" type="text" placeholder="Enter Your Number" class="input input-bordered bg-gray-100 rounded-3xl border-none" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text font-bold">4 digit PIN</span>
+                    </label>
+                    <input id="account-pin" type="text" placeholder="Enter Your PIN" class="input input-bordered bg-gray-100 rounded-3xl border-none" required />
+                    <label class="label">
+                      <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                    </label>
+                  </div>
+                  <div class="form-control mt-6">
+                    <input type="submit" id="log-btn" class="btn btn-primary rounded-3xl bg-[#0874F2] border-none text-white" value="Login"/>
+                  </div>
+                </form>
+              </div>
+          </div>
+
+          
+    </section>
+   
+    <script src="script.js"></script>
+</body>
+</html>
