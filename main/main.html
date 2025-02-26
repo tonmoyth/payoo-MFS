@@ -56,9 +56,9 @@
                         <p class="font-bold">Pay Bill</p>
                     </div>
 
-                    <div class="border-2 rounded-lg text-center p-4">
+                    <div id="transaction-box" class="border-2 rounded-lg text-center p-4">
                         <img class="w-1/4 mx-auto" src="../img/wallet 1.png" alt="">
-                        <p class="font-bold">Transaction</p>
+                        <p class="font-bold">Transaction history</p>
                     </div>
                 </div>
              </section>
@@ -72,7 +72,7 @@
                             <label class="label">
                                 <span class="label-text">Select</span>
                               </label>
-                              <select class="select select-bordered w-full max-w-xs">
+                              <select id="select" class="select select-bordered w-full max-w-xs">
                                 <option disabled selected>Select</option>
                                 <option>Bkash</option>
                                 <option>Nagad</option>
@@ -82,7 +82,7 @@
                           <label class="label">
                             <span class="label-text">Agent Number</span>
                           </label>
-                          <input type="text" placeholder="Enter 11 digit Number" class="input input-bordered" required />
+                          <input id="agent-number" type="text" placeholder="Enter 11 digit Number" class="input input-bordered" required />
                         </div>
                             <span class="label-text">Amount</span>
                           </label>
@@ -136,10 +136,20 @@
                  </div>
                  
              </section>
+
+             <!-- transaction -->
+              <section id="transaction">
+                <h1 class="font-bold text-green-500 text-center text-2xl mt-5">Transaction history</h1>
+                <div id="transaction-history">
+
+                </div>
+              </section>
         </header>
     </section>
-    <script src="main.js"></script>
     <script src="toggle.js"></script>
-    <script src="cashout.js"></script>
+    <script src="utility.js"></script>
+    <script src="script.js"></script>
+    <script src="cash.js"></script>
+    <script src="transaction.js"></script>
 </body>
 </html>

@@ -1,16 +1,15 @@
-document.getElementById('form').addEventListener('submit',function(event){
-
-    event.preventDefault()
-    const accountNumber = document.getElementById('account-number').value;
-    console.log(typeof accountNumber);
-    const accountPin = document.getElementById('account-pin').value;
-    if(accountNumber.length === 11){
-        if(accountPin === '12345'){
+document.getElementById('log-btn').addEventListener('click',function(event){
+    event.preventDefault();
+    const number = document.getElementById('account-number').value;
+    const pin = document.getElementById('account-pin').value;
+    
+    if(number.length === 11){
+        if(pin === "12345"){
             window.location.href="main/main.html"
         }else{
-            alert('please check your pin')
+            alert('Wrong pin')
         }
     }else{
-        alert('please check your number')
+        alert('Enter valid number');
     }
-});
+})
